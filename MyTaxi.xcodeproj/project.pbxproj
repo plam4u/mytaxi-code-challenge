@@ -20,6 +20,7 @@
 		68C367D01F69DFE7007AFF53 /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68C367CF1F69DFE7007AFF53 /* List.storyboard */; };
 		68C367D31F69E097007AFF53 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68C367D21F69E097007AFF53 /* Map.storyboard */; };
 		68C367D81F69E516007AFF53 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C367D71F69E516007AFF53 /* MapViewController.swift */; };
+		68C367DA1F69F13F007AFF53 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 68C367D91F69F13F007AFF53 /* README.md */; };
 		EDB7A28D70CFF9732B7961C0 /* Pods_MyTaxi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF53B346CD44F2672785DF98 /* Pods_MyTaxi.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		68C367D21F69E097007AFF53 /* Map.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		68C367D61F69E516007AFF53 /* MyTaxi-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyTaxi-Bridging-Header.h"; sourceTree = "<group>"; };
 		68C367D71F69E516007AFF53 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		68C367D91F69F13F007AFF53 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AB1F21B426D83030F8A58E14 /* Pods-MyTaxi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTaxi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyTaxi/Pods-MyTaxi.debug.xcconfig"; sourceTree = "<group>"; };
 		EF53B346CD44F2672785DF98 /* Pods_MyTaxi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyTaxi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -75,6 +77,7 @@
 		6882A8241F69B41D0038ED64 = {
 			isa = PBXGroup;
 			children = (
+				68C367D91F69F13F007AFF53 /* README.md */,
 				6882A82F1F69B41D0038ED64 /* MyTaxi */,
 				6882A82E1F69B41D0038ED64 /* Products */,
 				05229C4F6B95973E20BF4338 /* Pods */,
@@ -336,6 +339,7 @@
 				6882A85B1F69D84B0038ED64 /* MYTVehicleTableViewCell.m in Sources */,
 				6882A8551F69CE920038ED64 /* MYTVehiclesListViewController.m in Sources */,
 				6882A8501F69BB9C0038ED64 /* MYTVehicleModel.m in Sources */,
+				68C367DA1F69F13F007AFF53 /* README.md in Sources */,
 				6882A84D1F69B7E90038ED64 /* MYTVehiclesAPIClient.m in Sources */,
 				68C367D81F69E516007AFF53 /* MapViewController.swift in Sources */,
 			);
