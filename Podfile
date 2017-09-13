@@ -6,5 +6,6 @@ target 'MyTaxi' do
   use_frameworks!
 
   # Pods for MyTaxi
+	pod 'AFNetworking', '~> 3.0'
 
 end
