@@ -34,8 +34,9 @@ static NSString * const kTaxiCellIdentifier = @"vehicleCell";
 }
 
 - (void)loadContent {
+	MKMapRect hamburgRect = MKMapRectMake(141643306.94949707, 86732981.832517802, 37282.702865302563, 64325.091840445995);
 	[[MYTVehiclesAPIClient sharedClient]
-	 getVehiclesInMapRect:MKMapRectMake(53.5439092, 9.9834774, 0.05, 0.05)
+	 getVehiclesInMapRect:hamburgRect
 	 success:^(NSArray<MYTVehicleModel *> * _Nonnull vehicles) {
 		 self.vehicles = vehicles;
 		 [self.tableView reloadData];
