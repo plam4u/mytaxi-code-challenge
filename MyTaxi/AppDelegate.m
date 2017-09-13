@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MYTVehiclesAPIClient.h"
+#import "VehicleModel.h"
 
 @interface AppDelegate ()
 
@@ -19,7 +20,7 @@
 
 	[[MYTVehiclesAPIClient sharedClient]
 	 getVehiclesInMapRect:MKMapRectMake(0, 0, 0, 0)
-	 success:^(NSArray * _Nonnull vehicles) {
+	 success:^(NSArray<VehicleModel*> * _Nonnull vehicles) {
 		 // do something with the vehicles
 		 NSLog(@"Success: %@", vehicles);
 	 }

@@ -9,6 +9,8 @@
 @import AFNetworking;
 @import MapKit;
 
+#import "VehicleModel.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MYTVehiclesAPIClient : AFHTTPSessionManager
@@ -29,7 +31,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param failure failure block to execute if there was an issue executing the query. Use the `error` to obtain more information.
  */
 - (void)getVehiclesInMapRect:(MKMapRect)rect
-										 success:(void (^)(NSArray *vehicles))success
+										 success:(void (^)(NSArray<VehicleModel*> *vehicles))success
 										 failure:(void (^)(NSError *error))failure;
 
 @end

@@ -25,7 +25,7 @@ static NSString * const POIBaseURLString = @"https://poi-api.mytaxi.com/PoiServi
 }
 
 - (void)getVehiclesInMapRect:(MKMapRect)rect
-										 success:(void (^)(NSArray *vehicles))success
+										 success:(void (^)(NSArray<VehicleModel*> *vehicles))success
 										 failure:(void (^)(NSError *error))failure {
 	[[MYTVehiclesAPIClient sharedClient]
 	 // TODO: refactor to read the passed rect argument
