@@ -8,14 +8,14 @@
 
 #import "VehiclesListViewController.h"
 #import "MYTVehiclesAPIClient.h"
+#import "VehicleTableViewCell.h"
+#import "VehicleTableViewCell+Configure.h"
 
-static NSString * const kTaxiCellIdentifier = @"taxiCell";
+static NSString * const kTaxiCellIdentifier = @"vehicleCell";
 
 @interface VehiclesListViewController () <UITableViewDataSource>
-
 @property (nonatomic, strong) NSArray<VehicleModel *> *vehicles;
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
-
 @end
 
 @implementation VehiclesListViewController
@@ -23,11 +23,14 @@ static NSString * const kTaxiCellIdentifier = @"taxiCell";
 - (void)viewDidLoad {
 	[super viewDidLoad];
 
-	[self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kTaxiCellIdentifier];
-	self.tableView.dataSource = self;
-
-	self.vehicles = @[];
+	[self setupTableView];
 	[self loadContent];
+}
+
+- (void)setupTableView {
+	self.tableView.dataSource = self;
+	self.tableView.rowHeight = 60;
+	self.vehicles = @[];
 }
 
 - (void)loadContent {
@@ -38,7 +41,7 @@ static NSString * const kTaxiCellIdentifier = @"taxiCell";
 		 [self.tableView reloadData];
 	 }
 	 failure:^(NSError * _Nonnull error) {
-
+		 // handle error
 	 }];
 }
 
@@ -49,10 +52,8 @@ static NSString * const kTaxiCellIdentifier = @"taxiCell";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kTaxiCellIdentifier];
-	cell.imageView.image = [UIImage imageNamed:@"ic_taxi"];
-	cell.textLabel.text = [NSString stringWithFormat:@"%ld", self.vehicles[indexPath.row].vehicleId];
-	cell.detailTextLabel.text = self.vehicles[indexPath.row].state;
+	VehicleTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kTaxiCellIdentifier];
+	[cell configureForVehicle:self.vehicles[indexPath.row]];
 	return cell;
 }
 

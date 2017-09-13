@@ -15,6 +15,8 @@
 		6882A84D1F69B7E90038ED64 /* MYTVehiclesAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6882A84C1F69B7E90038ED64 /* MYTVehiclesAPIClient.m */; };
 		6882A8501F69BB9C0038ED64 /* VehicleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6882A84F1F69BB9C0038ED64 /* VehicleModel.m */; };
 		6882A8551F69CE920038ED64 /* VehiclesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6882A8541F69CE920038ED64 /* VehiclesListViewController.m */; };
+		6882A85B1F69D84B0038ED64 /* VehicleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6882A85A1F69D84B0038ED64 /* VehicleTableViewCell.m */; };
+		6882A85E1F69DA3E0038ED64 /* VehicleTableViewCell+Configure.m in Sources */ = {isa = PBXBuildFile; fileRef = 6882A85D1F69DA3E0038ED64 /* VehicleTableViewCell+Configure.m */; };
 		EDB7A28D70CFF9732B7961C0 /* Pods_MyTaxi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF53B346CD44F2672785DF98 /* Pods_MyTaxi.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +36,10 @@
 		6882A84F1F69BB9C0038ED64 /* VehicleModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VehicleModel.m; sourceTree = "<group>"; };
 		6882A8531F69CE920038ED64 /* VehiclesListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VehiclesListViewController.h; sourceTree = "<group>"; };
 		6882A8541F69CE920038ED64 /* VehiclesListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VehiclesListViewController.m; sourceTree = "<group>"; };
+		6882A8591F69D84B0038ED64 /* VehicleTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VehicleTableViewCell.h; sourceTree = "<group>"; };
+		6882A85A1F69D84B0038ED64 /* VehicleTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VehicleTableViewCell.m; sourceTree = "<group>"; };
+		6882A85C1F69DA3E0038ED64 /* VehicleTableViewCell+Configure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VehicleTableViewCell+Configure.h"; sourceTree = "<group>"; };
+		6882A85D1F69DA3E0038ED64 /* VehicleTableViewCell+Configure.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "VehicleTableViewCell+Configure.m"; sourceTree = "<group>"; };
 		AB1F21B426D83030F8A58E14 /* Pods-MyTaxi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTaxi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyTaxi/Pods-MyTaxi.debug.xcconfig"; sourceTree = "<group>"; };
 		EF53B346CD44F2672785DF98 /* Pods_MyTaxi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyTaxi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -139,10 +145,30 @@
 		6882A8511F69CE510038ED64 /* List */ = {
 			isa = PBXGroup;
 			children = (
+				6882A8581F69D8310038ED64 /* View */,
+				6882A8571F69D8210038ED64 /* ViewController */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		6882A8571F69D8210038ED64 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
 				6882A8531F69CE920038ED64 /* VehiclesListViewController.h */,
 				6882A8541F69CE920038ED64 /* VehiclesListViewController.m */,
 			);
-			path = List;
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		6882A8581F69D8310038ED64 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6882A8591F69D84B0038ED64 /* VehicleTableViewCell.h */,
+				6882A85A1F69D84B0038ED64 /* VehicleTableViewCell.m */,
+				6882A85C1F69DA3E0038ED64 /* VehicleTableViewCell+Configure.h */,
+				6882A85D1F69DA3E0038ED64 /* VehicleTableViewCell+Configure.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		6FD7C166DFD833D9C8A422EA /* Frameworks */ = {
@@ -274,8 +300,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6882A85E1F69DA3E0038ED64 /* VehicleTableViewCell+Configure.m in Sources */,
 				6882A8401F69B41D0038ED64 /* main.m in Sources */,
 				6882A8321F69B41D0038ED64 /* AppDelegate.m in Sources */,
+				6882A85B1F69D84B0038ED64 /* VehicleTableViewCell.m in Sources */,
 				6882A8551F69CE920038ED64 /* VehiclesListViewController.m in Sources */,
 				6882A8501F69BB9C0038ED64 /* VehicleModel.m in Sources */,
 				6882A84D1F69B7E90038ED64 /* MYTVehiclesAPIClient.m in Sources */,
