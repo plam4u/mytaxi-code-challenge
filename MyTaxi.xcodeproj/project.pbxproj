@@ -76,15 +76,31 @@
 			children = (
 				6882A8301F69B41D0038ED64 /* AppDelegate.h */,
 				6882A8311F69B41D0038ED64 /* AppDelegate.m */,
-				6882A8331F69B41D0038ED64 /* ViewController.h */,
-				6882A8341F69B41D0038ED64 /* ViewController.m */,
-				6882A8361F69B41D0038ED64 /* Main.storyboard */,
+				6882A8471F69B64C0038ED64 /* Features */,
+				6882A8461F69B6380038ED64 /* Supporting Files */,
+			);
+			path = MyTaxi;
+			sourceTree = "<group>";
+		};
+		6882A8461F69B6380038ED64 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				6882A8391F69B41D0038ED64 /* Assets.xcassets */,
 				6882A83B1F69B41D0038ED64 /* LaunchScreen.storyboard */,
 				6882A83E1F69B41D0038ED64 /* Info.plist */,
 				6882A83F1F69B41D0038ED64 /* main.m */,
 			);
-			path = MyTaxi;
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6882A8471F69B64C0038ED64 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				6882A8361F69B41D0038ED64 /* Main.storyboard */,
+				6882A8331F69B41D0038ED64 /* ViewController.h */,
+				6882A8341F69B41D0038ED64 /* ViewController.m */,
+			);
+			path = Features;
 			sourceTree = "<group>";
 		};
 		6FD7C166DFD833D9C8A422EA /* Frameworks */ = {
@@ -350,7 +366,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 52J7C48NL9;
-				INFOPLIST_FILE = MyTaxi/Info.plist;
+				INFOPLIST_FILE = "MyTaxi/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pandreev.MyTaxi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -364,7 +381,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 52J7C48NL9;
-				INFOPLIST_FILE = MyTaxi/Info.plist;
+				INFOPLIST_FILE = "MyTaxi/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pandreev.MyTaxi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -391,6 +409,7 @@
 				6882A8451F69B41D0038ED64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
