@@ -14,7 +14,8 @@
 // everything else is mapped directly as we receive it
 // anything that is not declared as a property is ignored
 + (JSONKeyMapper *)keyMapper {
-	return [[JSONKeyMapper alloc] initWithModelToJSONDictionary: @{@"latitude": @"coordinate.latitude",
+	return [[JSONKeyMapper alloc] initWithModelToJSONDictionary: @{@"vehicleId": @"id",
+																																 @"latitude": @"coordinate.latitude",
 																																 @"longitude": @"coordinate.longitude"}];
 }
 

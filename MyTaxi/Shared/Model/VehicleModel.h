@@ -12,7 +12,7 @@
 
 @interface VehicleModel : JSONModel
 
-@property (nonatomic, assign) NSInteger id; // note that we use `id` as a variable name
+@property (nonatomic, assign) NSInteger vehicleId;
 @property (nonatomic, strong) NSString *type;
 @property (nonatomic, strong) NSString *state;
 @property (nonatomic, assign) CGFloat latitude;
