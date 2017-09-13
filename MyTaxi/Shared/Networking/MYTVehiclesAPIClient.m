@@ -7,7 +7,7 @@
 //
 
 #import "MYTVehiclesAPIClient.h"
-#import "VehicleModel.h"
+#import "MYTVehicleModel.h"
 
 static NSString * const POIBaseURLString = @"https://poi-api.mytaxi.com/PoiService/";
 
@@ -25,7 +25,7 @@ static NSString * const POIBaseURLString = @"https://poi-api.mytaxi.com/PoiServi
 }
 
 - (void)getVehiclesInMapRect:(MKMapRect)rect
-										 success:(void (^)(NSArray<VehicleModel*> *vehicles))success
+										 success:(void (^)(NSArray<MYTVehicleModel*> *vehicles))success
 										 failure:(void (^)(NSError *error))failure {
 	[[MYTVehiclesAPIClient sharedClient]
 	 // TODO: refactor to read the passed rect argument
@@ -40,7 +40,7 @@ static NSString * const POIBaseURLString = @"https://poi-api.mytaxi.com/PoiServi
 
 		 NSArray *vehicleDictionaries = responseObject[@"poiList"];
 		 NSError *error;
-		 NSArray *vehicles = [VehicleModel arrayOfModelsFromDictionaries:vehicleDictionaries error:&error];
+		 NSArray *vehicles = [MYTVehicleModel arrayOfModelsFromDictionaries:vehicleDictionaries error:&error];
 
 		 if (success != nil) {
 			 success(vehicles);

@@ -1,13 +1,13 @@
 //
-//  VehicleTableViewCell.m
+//  MYTVehicleTableViewCell.m
 //  MyTaxi
 //
 //  Created by Plamen Andreev on 9/13/17.
 //  Copyright © 2017 Plamen Andreev. All rights reserved.
 //
 
-#import "VehicleTableViewCell.h"
+#import "MYTVehicleTableViewCell.h"
 
-@implementation VehicleTableViewCell
+@implementation MYTVehicleTableViewCell
 
 @end

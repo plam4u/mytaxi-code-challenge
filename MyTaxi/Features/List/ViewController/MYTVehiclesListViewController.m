@@ -1,24 +1,24 @@
 //
-//  VehiclesListViewController.m
+//  MYTVehiclesListViewController.m
 //  MyTaxi
 //
 //  Created by Plamen Andreev on 9/13/17.
 //  Copyright © 2017 Plamen Andreev. All rights reserved.
 //
 
-#import "VehiclesListViewController.h"
+#import "MYTVehiclesListViewController.h"
 #import "MYTVehiclesAPIClient.h"
-#import "VehicleTableViewCell.h"
-#import "VehicleTableViewCell+Configure.h"
+#import "MYTVehicleTableViewCell.h"
+#import "MYTVehicleTableViewCell+Configure.h"
 
 static NSString * const kTaxiCellIdentifier = @"vehicleCell";
 
-@interface VehiclesListViewController () <UITableViewDataSource>
-@property (nonatomic, strong) NSArray<VehicleModel *> *vehicles;
+@interface MYTVehiclesListViewController () <UITableViewDataSource>
+@property (nonatomic, strong) NSArray<MYTVehicleModel *> *vehicles;
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
 @end
 
-@implementation VehiclesListViewController
+@implementation MYTVehiclesListViewController
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
@@ -36,7 +36,7 @@ static NSString * const kTaxiCellIdentifier = @"vehicleCell";
 - (void)loadContent {
 	[[MYTVehiclesAPIClient sharedClient]
 	 getVehiclesInMapRect:MKMapRectMake(0, 0, 0, 0)
-	 success:^(NSArray<VehicleModel *> * _Nonnull vehicles) {
+	 success:^(NSArray<MYTVehicleModel *> * _Nonnull vehicles) {
 		 self.vehicles = vehicles;
 		 [self.tableView reloadData];
 	 }
@@ -52,7 +52,7 @@ static NSString * const kTaxiCellIdentifier = @"vehicleCell";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-	VehicleTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kTaxiCellIdentifier];
+	MYTVehicleTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kTaxiCellIdentifier];
 	[cell configureForVehicle:self.vehicles[indexPath.row]];
 	return cell;
 }

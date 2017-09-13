@@ -1,5 +1,5 @@
 //
-//  VehicleModel.h
+//  MYTVehicleModel.h
 //  MyTaxi
 //
 //  Created by Plamen Andreev on 9/13/17.
@@ -10,7 +10,7 @@
 @import UIKit;
 @import JSONModel;
 
-@interface VehicleModel : JSONModel
+@interface MYTVehicleModel : JSONModel
 
 @property (nonatomic, assign) NSInteger vehicleId;
 @property (nonatomic, strong) NSString *type;

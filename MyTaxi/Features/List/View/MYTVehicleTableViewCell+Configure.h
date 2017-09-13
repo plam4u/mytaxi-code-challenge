@@ -1,24 +1,24 @@
 //
-//  VehicleTableViewCell+Configure.h
+//  MYTVehicleTableViewCell+Configure.h
 //  MyTaxi
 //
 //  Created by Plamen Andreev on 9/13/17.
 //  Copyright © 2017 Plamen Andreev. All rights reserved.
 //
 
-#import "VehicleTableViewCell.h"
-#import "VehicleModel.h"
+#import "MYTVehicleTableViewCell.h"
+#import "MYTVehicleModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface VehicleTableViewCell (Configure)
+@interface MYTVehicleTableViewCell (Configure)
 
 /**
  Configures the view to display a model
 
  @param vehicle the model to display
  */
-- (void)configureForVehicle:(VehicleModel *)vehicle;
+- (void)configureForVehicle:(MYTVehicleModel *)vehicle;
 
 @end
 

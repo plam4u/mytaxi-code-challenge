@@ -7,24 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6882A8321F69B41D0038ED64 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6882A8311F69B41D0038ED64 /* AppDelegate.m */; };
+		6882A8321F69B41D0038ED64 /* MYTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6882A8311F69B41D0038ED64 /* MYTAppDelegate.m */; };
 		6882A8381F69B41D0038ED64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6882A8361F69B41D0038ED64 /* Main.storyboard */; };
 		6882A83A1F69B41D0038ED64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6882A8391F69B41D0038ED64 /* Assets.xcassets */; };
 		6882A83D1F69B41D0038ED64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6882A83B1F69B41D0038ED64 /* LaunchScreen.storyboard */; };
 		6882A8401F69B41D0038ED64 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6882A83F1F69B41D0038ED64 /* main.m */; };
 		6882A84D1F69B7E90038ED64 /* MYTVehiclesAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6882A84C1F69B7E90038ED64 /* MYTVehiclesAPIClient.m */; };
-		6882A8501F69BB9C0038ED64 /* VehicleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6882A84F1F69BB9C0038ED64 /* VehicleModel.m */; };
-		6882A8551F69CE920038ED64 /* VehiclesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6882A8541F69CE920038ED64 /* VehiclesListViewController.m */; };
-		6882A85B1F69D84B0038ED64 /* VehicleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6882A85A1F69D84B0038ED64 /* VehicleTableViewCell.m */; };
-		6882A85E1F69DA3E0038ED64 /* VehicleTableViewCell+Configure.m in Sources */ = {isa = PBXBuildFile; fileRef = 6882A85D1F69DA3E0038ED64 /* VehicleTableViewCell+Configure.m */; };
+		6882A8501F69BB9C0038ED64 /* MYTVehicleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6882A84F1F69BB9C0038ED64 /* MYTVehicleModel.m */; };
+		6882A8551F69CE920038ED64 /* MYTVehiclesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6882A8541F69CE920038ED64 /* MYTVehiclesListViewController.m */; };
+		6882A85B1F69D84B0038ED64 /* MYTVehicleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6882A85A1F69D84B0038ED64 /* MYTVehicleTableViewCell.m */; };
+		6882A85E1F69DA3E0038ED64 /* MYTVehicleTableViewCell+Configure.m in Sources */ = {isa = PBXBuildFile; fileRef = 6882A85D1F69DA3E0038ED64 /* MYTVehicleTableViewCell+Configure.m */; };
 		EDB7A28D70CFF9732B7961C0 /* Pods_MyTaxi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF53B346CD44F2672785DF98 /* Pods_MyTaxi.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		638B474E115D4C59F93A192F /* Pods-MyTaxi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTaxi.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyTaxi/Pods-MyTaxi.release.xcconfig"; sourceTree = "<group>"; };
 		6882A82D1F69B41D0038ED64 /* MyTaxi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTaxi.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6882A8301F69B41D0038ED64 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		6882A8311F69B41D0038ED64 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6882A8301F69B41D0038ED64 /* MYTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYTAppDelegate.h; sourceTree = "<group>"; };
+		6882A8311F69B41D0038ED64 /* MYTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYTAppDelegate.m; sourceTree = "<group>"; };
 		6882A8371F69B41D0038ED64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6882A8391F69B41D0038ED64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6882A83C1F69B41D0038ED64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -32,14 +32,14 @@
 		6882A83F1F69B41D0038ED64 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6882A84B1F69B7E90038ED64 /* MYTVehiclesAPIClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYTVehiclesAPIClient.h; sourceTree = "<group>"; };
 		6882A84C1F69B7E90038ED64 /* MYTVehiclesAPIClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYTVehiclesAPIClient.m; sourceTree = "<group>"; };
-		6882A84E1F69BB9C0038ED64 /* VehicleModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VehicleModel.h; sourceTree = "<group>"; };
-		6882A84F1F69BB9C0038ED64 /* VehicleModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VehicleModel.m; sourceTree = "<group>"; };
-		6882A8531F69CE920038ED64 /* VehiclesListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VehiclesListViewController.h; sourceTree = "<group>"; };
-		6882A8541F69CE920038ED64 /* VehiclesListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VehiclesListViewController.m; sourceTree = "<group>"; };
-		6882A8591F69D84B0038ED64 /* VehicleTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VehicleTableViewCell.h; sourceTree = "<group>"; };
-		6882A85A1F69D84B0038ED64 /* VehicleTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VehicleTableViewCell.m; sourceTree = "<group>"; };
-		6882A85C1F69DA3E0038ED64 /* VehicleTableViewCell+Configure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VehicleTableViewCell+Configure.h"; sourceTree = "<group>"; };
-		6882A85D1F69DA3E0038ED64 /* VehicleTableViewCell+Configure.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "VehicleTableViewCell+Configure.m"; sourceTree = "<group>"; };
+		6882A84E1F69BB9C0038ED64 /* MYTVehicleModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYTVehicleModel.h; sourceTree = "<group>"; };
+		6882A84F1F69BB9C0038ED64 /* MYTVehicleModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYTVehicleModel.m; sourceTree = "<group>"; };
+		6882A8531F69CE920038ED64 /* MYTVehiclesListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYTVehiclesListViewController.h; sourceTree = "<group>"; };
+		6882A8541F69CE920038ED64 /* MYTVehiclesListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYTVehiclesListViewController.m; sourceTree = "<group>"; };
+		6882A8591F69D84B0038ED64 /* MYTVehicleTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYTVehicleTableViewCell.h; sourceTree = "<group>"; };
+		6882A85A1F69D84B0038ED64 /* MYTVehicleTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYTVehicleTableViewCell.m; sourceTree = "<group>"; };
+		6882A85C1F69DA3E0038ED64 /* MYTVehicleTableViewCell+Configure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MYTVehicleTableViewCell+Configure.h"; sourceTree = "<group>"; };
+		6882A85D1F69DA3E0038ED64 /* MYTVehicleTableViewCell+Configure.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MYTVehicleTableViewCell+Configure.m"; sourceTree = "<group>"; };
 		AB1F21B426D83030F8A58E14 /* Pods-MyTaxi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTaxi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyTaxi/Pods-MyTaxi.debug.xcconfig"; sourceTree = "<group>"; };
 		EF53B346CD44F2672785DF98 /* Pods_MyTaxi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyTaxi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -86,8 +86,8 @@
 		6882A82F1F69B41D0038ED64 /* MyTaxi */ = {
 			isa = PBXGroup;
 			children = (
-				6882A8301F69B41D0038ED64 /* AppDelegate.h */,
-				6882A8311F69B41D0038ED64 /* AppDelegate.m */,
+				6882A8301F69B41D0038ED64 /* MYTAppDelegate.h */,
+				6882A8311F69B41D0038ED64 /* MYTAppDelegate.m */,
 				6882A8481F69B78C0038ED64 /* Shared */,
 				6882A8471F69B64C0038ED64 /* Features */,
 				6882A8461F69B6380038ED64 /* Supporting Files */,
@@ -127,8 +127,8 @@
 		6882A8491F69B7940038ED64 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				6882A84E1F69BB9C0038ED64 /* VehicleModel.h */,
-				6882A84F1F69BB9C0038ED64 /* VehicleModel.m */,
+				6882A84E1F69BB9C0038ED64 /* MYTVehicleModel.h */,
+				6882A84F1F69BB9C0038ED64 /* MYTVehicleModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -154,8 +154,8 @@
 		6882A8571F69D8210038ED64 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				6882A8531F69CE920038ED64 /* VehiclesListViewController.h */,
-				6882A8541F69CE920038ED64 /* VehiclesListViewController.m */,
+				6882A8531F69CE920038ED64 /* MYTVehiclesListViewController.h */,
+				6882A8541F69CE920038ED64 /* MYTVehiclesListViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -163,10 +163,10 @@
 		6882A8581F69D8310038ED64 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				6882A8591F69D84B0038ED64 /* VehicleTableViewCell.h */,
-				6882A85A1F69D84B0038ED64 /* VehicleTableViewCell.m */,
-				6882A85C1F69DA3E0038ED64 /* VehicleTableViewCell+Configure.h */,
-				6882A85D1F69DA3E0038ED64 /* VehicleTableViewCell+Configure.m */,
+				6882A8591F69D84B0038ED64 /* MYTVehicleTableViewCell.h */,
+				6882A85A1F69D84B0038ED64 /* MYTVehicleTableViewCell.m */,
+				6882A85C1F69DA3E0038ED64 /* MYTVehicleTableViewCell+Configure.h */,
+				6882A85D1F69DA3E0038ED64 /* MYTVehicleTableViewCell+Configure.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -300,12 +300,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6882A85E1F69DA3E0038ED64 /* VehicleTableViewCell+Configure.m in Sources */,
+				6882A85E1F69DA3E0038ED64 /* MYTVehicleTableViewCell+Configure.m in Sources */,
 				6882A8401F69B41D0038ED64 /* main.m in Sources */,
-				6882A8321F69B41D0038ED64 /* AppDelegate.m in Sources */,
-				6882A85B1F69D84B0038ED64 /* VehicleTableViewCell.m in Sources */,
-				6882A8551F69CE920038ED64 /* VehiclesListViewController.m in Sources */,
-				6882A8501F69BB9C0038ED64 /* VehicleModel.m in Sources */,
+				6882A8321F69B41D0038ED64 /* MYTAppDelegate.m in Sources */,
+				6882A85B1F69D84B0038ED64 /* MYTVehicleTableViewCell.m in Sources */,
+				6882A8551F69CE920038ED64 /* MYTVehiclesListViewController.m in Sources */,
+				6882A8501F69BB9C0038ED64 /* MYTVehicleModel.m in Sources */,
 				6882A84D1F69B7E90038ED64 /* MYTVehiclesAPIClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

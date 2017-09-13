@@ -9,7 +9,7 @@
 @import AFNetworking;
 @import MapKit;
 
-#import "VehicleModel.h"
+#import "MYTVehicleModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -31,7 +31,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param failure failure block to execute if there was an issue executing the query. Use the `error` to obtain more information.
  */
 - (void)getVehiclesInMapRect:(MKMapRect)rect
-										 success:(void (^)(NSArray<VehicleModel*> *vehicles))success
+										 success:(void (^)(NSArray<MYTVehicleModel*> *vehicles))success
 										 failure:(void (^)(NSError *error))failure;
 
 @end

@@ -1,14 +1,14 @@
 //
-//  VehicleModel.m
+//  MYTVehicleModel.m
 //  MyTaxi
 //
 //  Created by Plamen Andreev on 9/13/17.
 //  Copyright © 2017 Plamen Andreev. All rights reserved.
 //
 
-#import "VehicleModel.h"
+#import "MYTVehicleModel.h"
 
-@implementation VehicleModel
+@implementation MYTVehicleModel
 
 // we use the mapper to flatten the coordinate JSON object into latitude and longitude properties
 // everything else is mapped directly as we receive it

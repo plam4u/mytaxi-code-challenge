@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  MYTAppDelegate.h
 //  MyTaxi
 //
 //  Created by Plamen Andreev on 9/13/17.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface MYTAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
