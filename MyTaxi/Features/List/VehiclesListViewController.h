@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  VehiclesListViewController.h
 //  MyTaxi
 //
 //  Created by Plamen Andreev on 9/13/17.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface VehiclesListViewController : UIViewController
 
 @end
-
