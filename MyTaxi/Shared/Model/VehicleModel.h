@@ -8,10 +8,11 @@
 
 @import Foundation;
 @import UIKit;
+@import JSONModel;
 
-@interface VehicleModel : NSObject
+@interface VehicleModel : JSONModel
 
-@property (nonatomic, assign) NSInteger id;
+@property (nonatomic, assign) NSInteger id; // note that we use `id` as a variable name
 @property (nonatomic, strong) NSString *type;
 @property (nonatomic, strong) NSString *state;
 @property (nonatomic, assign) CGFloat latitude;
