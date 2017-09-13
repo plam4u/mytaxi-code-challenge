@@ -17,11 +17,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-	[[MYTVehiclesAPIClient sharedClient] getVehiclesInMapRect:MKMapRectMake(0, 0, 0, 0) success:^(NSArray * _Nonnull vehicles) {
-		// do something with the vehicles
-	} failure:^(NSError * _Nonnull error) {
-		// handle the error and notify the user
-	}];
+	[[MYTVehiclesAPIClient sharedClient]
+	 getVehiclesInMapRect:MKMapRectMake(0, 0, 0, 0)
+	 success:^(NSArray * _Nonnull vehicles) {
+		 // do something with the vehicles
+		 NSLog(@"Success: %@", vehicles);
+	 }
+	 failure:^(NSError * _Nonnull error) {
+		 // handle the error and notify the user
+		 NSLog(@"Failure %@", error.localizedDescription);
+	 }];
 
 	return YES;
 }

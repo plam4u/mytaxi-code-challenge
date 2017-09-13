@@ -14,6 +14,7 @@
 		6882A83D1F69B41D0038ED64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6882A83B1F69B41D0038ED64 /* LaunchScreen.storyboard */; };
 		6882A8401F69B41D0038ED64 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6882A83F1F69B41D0038ED64 /* main.m */; };
 		6882A84D1F69B7E90038ED64 /* MYTVehiclesAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6882A84C1F69B7E90038ED64 /* MYTVehiclesAPIClient.m */; };
+		6882A8501F69BB9C0038ED64 /* VehicleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6882A84F1F69BB9C0038ED64 /* VehicleModel.m */; };
 		EDB7A28D70CFF9732B7961C0 /* Pods_MyTaxi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF53B346CD44F2672785DF98 /* Pods_MyTaxi.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,8 @@
 		6882A83F1F69B41D0038ED64 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6882A84B1F69B7E90038ED64 /* MYTVehiclesAPIClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYTVehiclesAPIClient.h; sourceTree = "<group>"; };
 		6882A84C1F69B7E90038ED64 /* MYTVehiclesAPIClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYTVehiclesAPIClient.m; sourceTree = "<group>"; };
+		6882A84E1F69BB9C0038ED64 /* VehicleModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VehicleModel.h; sourceTree = "<group>"; };
+		6882A84F1F69BB9C0038ED64 /* VehicleModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VehicleModel.m; sourceTree = "<group>"; };
 		AB1F21B426D83030F8A58E14 /* Pods-MyTaxi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTaxi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyTaxi/Pods-MyTaxi.debug.xcconfig"; sourceTree = "<group>"; };
 		EF53B346CD44F2672785DF98 /* Pods_MyTaxi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyTaxi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -119,6 +122,8 @@
 		6882A8491F69B7940038ED64 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6882A84E1F69BB9C0038ED64 /* VehicleModel.h */,
+				6882A84F1F69BB9C0038ED64 /* VehicleModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -264,6 +269,7 @@
 				6882A8351F69B41D0038ED64 /* ViewController.m in Sources */,
 				6882A8401F69B41D0038ED64 /* main.m in Sources */,
 				6882A8321F69B41D0038ED64 /* AppDelegate.m in Sources */,
+				6882A8501F69BB9C0038ED64 /* VehicleModel.m in Sources */,
 				6882A84D1F69B7E90038ED64 /* MYTVehiclesAPIClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
