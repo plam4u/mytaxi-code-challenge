@@ -8,6 +8,7 @@
 
 #import "MYTVehiclesAPIClient.h"
 #import "MYTVehicleModel.h"
+@import MapKit;
 
 static NSString * const POIBaseURLString = @"https://poi-api.mytaxi.com/PoiService/";
 
@@ -27,9 +28,20 @@ static NSString * const POIBaseURLString = @"https://poi-api.mytaxi.com/PoiServi
 - (void)getVehiclesInMapRect:(MKMapRect)rect
 										 success:(void (^)(NSArray<MYTVehicleModel*> *vehicles))success
 										 failure:(void (^)(NSError *error))failure {
+	MKMapPoint p1 = MKMapPointMake(rect.origin.x, rect.origin.y);
+	MKMapPoint p2 = MKMapPointMake(rect.origin.x + rect.size.width, rect.origin.y + rect.size.height);
+
+	CLLocationCoordinate2D topLeftCoord = MKCoordinateForMapPoint(p1);
+	CLLocationCoordinate2D bottomRightCoord = MKCoordinateForMapPoint(p2);
+
+	double p1Lat = topLeftCoord.latitude;
+	double p1Lon = topLeftCoord.longitude;
+	double p2Lat = bottomRightCoord.latitude;
+	double p2Lon = bottomRightCoord.longitude;
+	NSString *query = [NSString stringWithFormat:@"poi/v1?p1Lat=%f&p1Lon=%f&p2Lat=%f&p2Lon=%f", p1Lat, p1Lon, p2Lat, p2Lon];
+
 	[[MYTVehiclesAPIClient sharedClient]
-	 // TODO: refactor to read the passed rect argument
-	 GET:@"poi/v1?p2Lat=53.394655&p1Lon=9.757589&p1Lat=53.694865&p2Lon=10.099891"
+	 GET:query
 	 parameters:nil progress:nil
 	 success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
 		 // TODO: agree with the team how to handle the errors of malformed responses
