@@ -12,7 +12,7 @@
         <!--Map View-->
         <scene sceneID="o21-99-lAI">
             <objects>
-                <viewController id="ojf-J0-Xa1" sceneMemberID="viewController">
+                <viewController id="ojf-J0-Xa1" customClass="MapViewController" customModule="MyTaxi" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CRK-Lq-J0N"/>
                         <viewControllerLayoutGuide type="bottom" id="kKC-zQ-MGM"/>
@@ -20,10 +20,24 @@
                     <view key="view" contentMode="scaleToFill" id="fjD-zN-wAm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="nfK-pO-nBR">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="nfK-pO-nBR" secondAttribute="trailing" id="9XC-6S-2Sk"/>
+                            <constraint firstItem="nfK-pO-nBR" firstAttribute="top" secondItem="CRK-Lq-J0N" secondAttribute="bottom" id="BpJ-hd-F0d"/>
+                            <constraint firstItem="nfK-pO-nBR" firstAttribute="leading" secondItem="fjD-zN-wAm" secondAttribute="leading" id="RCQ-aK-MR1"/>
+                            <constraint firstItem="kKC-zQ-MGM" firstAttribute="top" secondItem="nfK-pO-nBR" secondAttribute="bottom" id="tpN-G3-4xu"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map View" image="location-pin" id="JRd-o6-LkK"/>
                     <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="mapView" destination="nfK-pO-nBR" id="5p1-bN-ie9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lcC-MB-BkB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
