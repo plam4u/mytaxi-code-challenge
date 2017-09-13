@@ -18,6 +18,7 @@
 		6882A85B1F69D84B0038ED64 /* MYTVehicleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6882A85A1F69D84B0038ED64 /* MYTVehicleTableViewCell.m */; };
 		6882A85E1F69DA3E0038ED64 /* MYTVehicleTableViewCell+Configure.m in Sources */ = {isa = PBXBuildFile; fileRef = 6882A85D1F69DA3E0038ED64 /* MYTVehicleTableViewCell+Configure.m */; };
 		68C367D01F69DFE7007AFF53 /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68C367CF1F69DFE7007AFF53 /* List.storyboard */; };
+		68C367D31F69E097007AFF53 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68C367D21F69E097007AFF53 /* Map.storyboard */; };
 		EDB7A28D70CFF9732B7961C0 /* Pods_MyTaxi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF53B346CD44F2672785DF98 /* Pods_MyTaxi.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		6882A85C1F69DA3E0038ED64 /* MYTVehicleTableViewCell+Configure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MYTVehicleTableViewCell+Configure.h"; sourceTree = "<group>"; };
 		6882A85D1F69DA3E0038ED64 /* MYTVehicleTableViewCell+Configure.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MYTVehicleTableViewCell+Configure.m"; sourceTree = "<group>"; };
 		68C367CF1F69DFE7007AFF53 /* List.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = List.storyboard; sourceTree = "<group>"; };
+		68C367D21F69E097007AFF53 /* Map.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		AB1F21B426D83030F8A58E14 /* Pods-MyTaxi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTaxi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyTaxi/Pods-MyTaxi.debug.xcconfig"; sourceTree = "<group>"; };
 		EF53B346CD44F2672785DF98 /* Pods_MyTaxi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyTaxi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -113,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				6882A8511F69CE510038ED64 /* List */,
+				68C367D11F69E085007AFF53 /* Map */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -172,6 +175,14 @@
 				6882A85D1F69DA3E0038ED64 /* MYTVehicleTableViewCell+Configure.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		68C367D11F69E085007AFF53 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				68C367D21F69E097007AFF53 /* Map.storyboard */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 		6FD7C166DFD833D9C8A422EA /* Frameworks */ = {
@@ -244,6 +255,7 @@
 			files = (
 				6882A83D1F69B41D0038ED64 /* LaunchScreen.storyboard in Resources */,
 				6882A83A1F69B41D0038ED64 /* Assets.xcassets in Resources */,
+				68C367D31F69E097007AFF53 /* Map.storyboard in Resources */,
 				68C367D01F69DFE7007AFF53 /* List.storyboard in Resources */,
 				6882A8381F69B41D0038ED64 /* Main.storyboard in Resources */,
 			);

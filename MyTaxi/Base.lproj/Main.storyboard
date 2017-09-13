@@ -20,6 +20,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="Fsa-XF-PkA" kind="relationship" relationship="viewControllers" id="Jj4-5i-SwO"/>
+                        <segue destination="57e-kR-fSc" kind="relationship" relationship="viewControllers" id="b0Q-hz-0pp"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b5z-3t-ken" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -30,11 +31,21 @@
         <scene sceneID="7ie-af-1OP">
             <objects>
                 <viewControllerPlaceholder storyboardIdentifier="MYTVehiclesListViewController" storyboardName="List" referencedIdentifier="MYTVehiclesListViewController" id="Fsa-XF-PkA" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="9hO-je-b8X"/>
+                    <tabBarItem key="tabBarItem" title="List View" id="9hO-je-b8X"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZOM-GR-hZL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="348" y="36"/>
+            <point key="canvasLocation" x="-718" y="484"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="fvg-Vs-9wq">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Map" id="57e-kR-fSc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Map View" id="TDQ-8i-U6V"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wl1-Ff-4nO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-309" y="484"/>
         </scene>
     </scenes>
 </document>
