@@ -1,6 +1,7 @@
 Using:
 - Xcode Version 9.0 beta 2 (9M137d)
 - CocoaPod 1.3
+- Postman
 
 Possible next steps:
 - refactor to MVVM
